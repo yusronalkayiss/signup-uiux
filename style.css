@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
+body {
+  margin: 0;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none !important;
+}
+.jumbotron {
+  width: 100%;
+  height: 400px;
+  background-image: url(img/Img-BG.png);
+  background-size: cover;
+  display: inline-block;
+}
+.jumbotron::after {
+  content: '';
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.98) 100%);
+  position: absolute;
+  top: 0;
+}
+.jumbotron .back {
+  position: absolute;
+  top: 0;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  z-index: 1;
+}
+.jumbotron .bi {
+  margin-right: 5px;
+}
+.jumbotron .header {
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  text-shadow: 0px 0px 80px #3c79e6;
+  margin-top: 108px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.jumbotron .desc {
+  text-align: center;
+  margin: auto;
+  font-size: 10px;
+  font-weight: 400;
+  color: #cacaca;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+.input .content {
+  margin-left: 25px;
+  padding-bottom: 20px;
+}
+
+.input .content .header {
+  font-weight: 700;
+  font-size: 28px;
+  color: black;
+}
+.input .content .desc {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3c79e6;
+  margin-top: 20px;
+}
+.input .content label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.input .content input {
+  width: 315px;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  color: #000000;
+  padding: 14px;
+}
+.input .content .p1 {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 15px;
+}
+.input .content .btn {
+  width: 315px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  top: 0;
+  margin-top: 25px;
+}
+.input .content .p2 {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+}
+.input .content .style {
+  color: #3c79e6;
+}
+
+.input .content .btn-google {
+  padding: 14px 69px 14px 69px;
+  font-weight: 500;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  color: #000000;
+  margin-top: 10px;
+}
+.input .content .icon-google {
+  margin-right: 14px;
+}
+/* Desktop */
+
+@media (min-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+  .jumbotron {
+    width: 50%;
+    height: 700px;
+    background-image: url(/img/Img-BG.png);
+    background-size: cover;
+    position: relative;
+  }
+  .jumbotron::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.98) 100%);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .jumbotron .back {
+    position: absolute;
+    top: 0;
+    margin-left: 100px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    z-index: 1;
+  }
+  .jumbotron .bi {
+    margin-right: 5px;
+  }
+  .jumbotron .header {
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    text-shadow: 0px 0px 80px #3c79e6;
+    width: 336px;
+    height: 94px;
+    margin-top: 208px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+  }
+  .jumbotron .desc {
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #cacaca;
+    position: relative;
+    z-index: 1;
+    margin-top: 38px;
+    width: 460px;
+    height: 42px;
+  }
+  .input {
+    position: absolute;
+    width: 50%;
+    height: 700px;
+    top: 0;
+    display: inline-block;
+  }
+  .input .content {
+    margin-left: 130px;
+    margin-top: 44px;
+  }
+  .input .content .header {
+    font-weight: 700;
+    font-size: 28px;
+    color: black;
+  }
+  .input .content .desc {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3c79e6;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+  }
+  .input .content label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .input .content input {
+    width: 315px;
+    height: 45px;
+    background: #ffffff;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    color: #000000;
+    padding: 14px;
+  }
+  ::-webkit-input-placeholder {
+    color: #c5c5c5;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .input .content .p1 {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+  }
+  .input .content .btn {
+    width: 315px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    margin-top: 25px;
+  }
+  .input .content .p2 {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 315px;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .input .content .style {
+    color: #3c79e6;
+  }
+
+  .input .content .btn-google {
+    padding: 14px 69px 14px 69px;
+    font-weight: 500;
+    font-size: 14px;
+    background: #ffffff;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    color: #000000;
+    margin-top: 10px;
+  }
+  .input .content .icon-google {
+    margin-right: 14px;
+  }
+}
